@@ -33,7 +33,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -127,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "fixdoor"
+  "defaultProject": "fixdoor",
+  "cli": {
+    "analytics": "65804130-6e7a-44bc-8acd-7e4f76c6a095"
+  }
 }

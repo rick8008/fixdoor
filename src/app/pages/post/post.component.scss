@@ -1,0 +1,35 @@
+.bg{
+    background-image: -webkit-gradient(linear,left top,right top,from(#e94e24),to(#f07e26));
+    background-image: linear-gradient(to right,#e94e24,#f07e26);
+    color:#fff !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.bg-2{
+    background-color: #e7e7e7 !important;
+}
+img{
+    max-width: 100%;
+}
+.titulo{
+    
+    font-size: 3rem;
+    font-weight: 700;
+    color: #F07E26;
+}
+.info{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.post-blog-div{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    p{
+        font-weight: 500;
+        font-size: 1.3rem !important;
+        color: #1a2025;
+    }
+    
+}

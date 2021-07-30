@@ -1,0 +1,92 @@
+<div class='bg pb-4'>
+    <div class='container-lg mb-4'>
+        <div class='row w-100 m-0 p-0'>
+            <div class='col-3 m-0 p-0'>
+                <h3>Filtro de produtos</h3>
+                <div  *ngFor="let item of categorias; let i = index">
+                    <p class='categorias categoria-{{item.id}}' (click)='ativar(item.id)'>
+                        {{item.titulo}}
+                    </p>
+                    <div *ngIf="ativo ==item.id " class='subcategorias-box'>
+                        <p *ngFor="let subcategorias of item.subcategorias; let i = index" class='subcategorias subcategorias-{{subcategorias.id}}'>
+                            {{subcategorias.titulo}}
+                        </p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class='col-9 m-0 p-0'>
+                <div class='vitrine-box'>
+                    
+                    <div class='row w-100 m-0 p-0'>
+                        <div class='col'>
+                            <h1>{{categorias[ativo].titulo}}</h1>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0 p-0'>
+                        <div class='col-6'>
+                            <input class='pesqiosa' placeholder="pesquise aqui..." >
+                        </div>
+                        <div class='col-6 text-right'>
+                            <a>acesse catálogo de categoria </a>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0 p-0 mt-4 pt-4'>
+                        <div class='col-4'>
+                            <app-produtovitrineobj [titulo]="obj.nome" [imagen]="obj.img"  [id]="obj.id" ></app-produtovitrineobj>
+                        </div>
+                        <div class='col-4'>
+                            <app-produtovitrineobj [titulo]="obj.nome" [imagen]="obj.img"  [id]="obj.id" ></app-produtovitrineobj>
+                        </div>
+                        <div class='col-4'>
+                            <app-produtovitrineobj [titulo]="obj.nome" [imagen]="obj.img"  [id]="obj.id" ></app-produtovitrineobj>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class='row w-100 m-0 p-0'>
+                        <div class='col-4'>
+                            <app-produtovitrineobj [titulo]="obj.nome" [imagen]="obj.img"  [id]="obj.id" ></app-produtovitrineobj>
+                        </div>
+                        <div class='col-4'>
+                            <app-produtovitrineobj [titulo]="obj.nome" [imagen]="obj.img"  [id]="obj.id" ></app-produtovitrineobj>
+                        </div>
+                        <div class='col-4'>
+                            <app-produtovitrineobj [titulo]="obj.nome" [imagen]="obj.img"  [id]="obj.id" ></app-produtovitrineobj>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class='row w-100 m-0 p-0'>
+                        <div class='col-4'>
+                            <app-produtovitrineobj [titulo]="obj.nome" [imagen]="obj.img"  [id]="obj.id" ></app-produtovitrineobj>
+                        </div>
+                        <div class='col-4'>
+                            <app-produtovitrineobj [titulo]="obj.nome" [imagen]="obj.img"  [id]="obj.id" ></app-produtovitrineobj>
+                        </div>
+                        <div class='col-4'>
+                            <app-produtovitrineobj [titulo]="obj.nome" [imagen]="obj.img"  [id]="obj.id" ></app-produtovitrineobj>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class='row w-100 m-0 p-0'>
+                        <div class='col-4'>
+                            <app-produtovitrineobj [titulo]="obj.nome" [imagen]="obj.img"  [id]="obj.id" ></app-produtovitrineobj>
+                        </div>
+                        <div class='col-4'>
+                            <app-produtovitrineobj [titulo]="obj.nome" [imagen]="obj.img"  [id]="obj.id" ></app-produtovitrineobj>
+                        </div>
+                        <div class='col-4'>
+                            <app-produtovitrineobj [titulo]="obj.nome" [imagen]="obj.img"  [id]="obj.id" ></app-produtovitrineobj>
+                        </div>
+                        
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

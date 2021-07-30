@@ -1,0 +1,39 @@
+
+<div class='row w-100 m-0 p-0 init'>
+    <div class='col ml-1 mr-1 bg'>
+        <div >
+            <div class='row w-100 m-0 p-0'>
+                <div class='col m-0 p-0'>
+                    <h1>{{infos.nome}}</h1>
+                    <h3>{{infos.categoria}}</h3>
+                </div>
+            </div>
+            <div class='row w-100 m-0 p-0 mt-4'>
+                <div class='col m-0 p-0'>
+                    <p>{{infos.sobre}}</p>
+                </div>
+            </div>
+            <div class='row w-100 m-0 p-0 mt-4'>
+                <div class='col m-0 p-0'>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                              <th scope="col">Informações do produto</th>
+                              <th scope="col"></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of infos.info; let i = index">
+                                <td>{{item.lable}}</td>
+                                <td>{{item.valor}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>

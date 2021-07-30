@@ -1,0 +1,23 @@
+nav {
+    background-image: -webkit-gradient(linear,left top,right top,from(#e94e24),to(#f07e26));
+    background-image: linear-gradient(to right,#e94e24,#f07e26);
+    img{
+        max-width: 100% ;
+    }
+    color:#fff;
+    height: 5rem;
+    
+}
+.navb-2{
+    background-image: none !important;
+    background-color: #e7e7e7 !important;
+    color:#1a2025;
+    margin-top: 5rem;
+    height: 3rem;
+    a{
+        color:#1a2025;
+    }
+}
+.espaco-top{
+    margin-top: 8rem;
+}

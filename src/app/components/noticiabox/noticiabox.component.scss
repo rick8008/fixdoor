@@ -1,0 +1,34 @@
+.img{
+    max-width: 100%;
+    height: 20rem;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.titulo-blok{
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    background: #fff;
+    padding-top: 2rem !important;
+    margin-top: -2rem !important;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 1rem !important;
+    padding-bottom: 2rem !important;
+}
+.gravata{
+    line-height: 1.2rem;
+    font-weight: 600;
+    color:#1a2025;
+}
+
+.text{
+    font-weight: 900 !important;
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+    color:#F07E26;
+}
+
+a:hover {   text-decoration: none; }
